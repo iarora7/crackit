@@ -3,6 +3,10 @@ package main.java.arrays;
 import java.util.Arrays;
 import java.util.HashMap;
 
+/*
+	Given an array A[] and a number x, check for pair in A[] with sum as x
+ */
+
 public class TwoSum {
 	/* O(n) complexity */
     public static int[] twoSum(int[] numbers, int target) {

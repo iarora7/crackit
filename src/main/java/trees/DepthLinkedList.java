@@ -4,7 +4,10 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 import main.java.utility.Node;
-import main.java.utility.Tree;
+
+/*
+Create a depth linked list with all nodes at the same depth.
+ */
 
 public class DepthLinkedList {
 	

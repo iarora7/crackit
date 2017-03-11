@@ -14,7 +14,7 @@ public class BalancedBinaryTree {
 	
 	public static void main(String args[]){
 		BalancedBinaryTree tree = new BalancedBinaryTree();
-		createTree(tree.root);
+		tree.root = createTree(tree.root);
 		System.out.println(isBalanced(tree) ? "Balanced" : "Not Balanced");
 	}
 
