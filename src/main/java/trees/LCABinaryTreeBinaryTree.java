@@ -72,7 +72,7 @@ public class LCABinaryTreeBinaryTree {
 		
 		if(leftRes.node!=null && rightRes.node!=null) {
 			return new Result(root, true);
-		}else if(root.data==i || root.data==j){
+		} else if(root.data==i || root.data==j){
 			boolean isAncestor = leftRes.node!=null || rightRes.node!=null ? true : false;
 			return new Result(root, isAncestor);
 		} else {
