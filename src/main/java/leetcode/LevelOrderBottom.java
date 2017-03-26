@@ -8,12 +8,12 @@ import java.util.List;
 /**
  * Created by arorai on 1/22/17.
  */
-public class LevelOrder {
+public class LevelOrderBottom {
 
     static Node root;
 
     public static void main(String args[]) {
-        LevelOrder tree = new LevelOrder();
+        LevelOrderBottom tree = new LevelOrderBottom();
         root = createTree(tree.root);
         List<List<Integer>> res = tree.levelOrderBottom(root);
 
@@ -22,20 +22,20 @@ public class LevelOrder {
     public List<List<Integer>> levelOrderBottom(Node root) {
 
         List<List<Integer>> result = new ArrayList();
-        levelOrder(root, 0, result);
-
+        levelOrderBottom(root, 0, result);
+        System.out.println("result: " + result);
         return result;
     }
 
-    public void levelOrder(Node root, int level, List<List<Integer>> result) {
+    public void levelOrderBottom(Node root, int level, List<List<Integer>> result) {
         if (root == null) return;
 
         if(level >= result.size()) {
-            System.out.println("level " + level +  " was null, at: " + root.data);
+
             result.add(new ArrayList());
         }
-        levelOrder(root.left, level+1, result);
-        levelOrder(root.right, level+1, result);
+        levelOrderBottom(root.left, level+1, result);
+        levelOrderBottom(root.right, level+1, result);
         result.get(result.size()-level-1).add(root.data);
 
         return;

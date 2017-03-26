@@ -6,12 +6,16 @@ import java.util.List;
 
 /**
  * Created by arorai on 3/17/17.
+ * Question: list of all triplets that sum upto a target.
+ * Complexity: O(n^2)
  */
 public class ThreeSum {
 
     public static void main(String args[]) {
 //        int[] nums = {1,5,4,8,32,2};
         int[] nums = {-1,5,-4,-4,8,32,2};
+//        int[] nums = {4, 2, -1, 1, -5, 6, -4};
+//        int[] nums = {-1,2};
         int finalTarget = 0;
         System.out.print(threeSum(nums, finalTarget));
     }
