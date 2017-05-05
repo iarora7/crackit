@@ -3,7 +3,7 @@ package main.java.leetcode;
 public class ReverseString {
 	
 	public static void main(String args[]) {
-		String s =  "   a   b ";
+		String s =  "   a child is playing ";
 		
 		System.out.println("Revered string:" + reverseString(s));
 	}

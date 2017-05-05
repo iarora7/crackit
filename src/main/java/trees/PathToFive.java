@@ -47,7 +47,7 @@ public class PathToFive {
 
 	private static void printPath(int[] path, int level) {
 		System.out.print("Path to Node: " );
-		for(int i=level; i>=0; i--){
+		for(int i=0; i<=level; i++){
 			System.out.print(path[i] + " " );
 		}
 		System.out.println();
